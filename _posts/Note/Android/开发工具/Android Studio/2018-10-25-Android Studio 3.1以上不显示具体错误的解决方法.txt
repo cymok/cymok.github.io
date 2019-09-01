@@ -1,0 +1,2 @@
+在AS下方找到Terminal的窗口，输入命令行： gradle compileDebug --stacktrace 
+若没有效果输入：命令行查找错误： gradle compileDebugSources 就能看到具体的错误了。

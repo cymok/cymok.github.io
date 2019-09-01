@@ -1,0 +1,6 @@
+输入用户and密码
+mzhx
+621537
+启动图形x-windows界面  (centos 开始选择了mini精简安装的话是没有图像界面的 可yum安装
+启动命令行
+startx
