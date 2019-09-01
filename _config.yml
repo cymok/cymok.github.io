@@ -1,8 +1,8 @@
 # Site settings 配置站点
-title: 'your awesome title'
-description: 'your web description'
-keywords: 'your web keywords, another keywords'
-url: 'https://abc.github.io' # your host
+title: 'cymok' # your awesome title
+description: '我的代码没有bug'
+keywords: 'Android, Java, Python' # your web keywords, another keywords
+url: 'https://cymok.github.io' # your host
 
 # nav 中文字符空格：&emsp;
 nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
@@ -10,43 +10,45 @@ nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
   标签: '/tags.html'
   时间线: '/timeline.html'
   关于博主: '/about.html'
-  友情链接: '/friendLink.html'
+ # 友情链接: '/friendLink.html'
+  个人简历: '/resume/resume.pdf'
 
 # 博主
 author: true
-name: 'your awesome name'
-NickName: 'your awesome nickname'
-webtitle: 'your awesome webtitle'
-bio: 'your awesome bio'
+name: 'Mok Chiyin'
+NickName: 'Harry'
+webtitle: '个人博客blog'
+bio: '24, boy'
 about: true
-aboutyou: 'your introduction'
-portraits: '/assets/profile.jpeg' # your portraits image file path
+aboutyou: '来自广东一个遥远的小村庄嘅一个boy，从第一次去网吧开始就爱上计算机。只有0和1的世界是多么的神奇、奥秘，而这注定是一条不归路。。。'
+# portraits: '/assets/profile.jpeg' # your portraits image file path
+portraits: 'https://avatars0.githubusercontent.com/u/27819746?s=460&v=4' # your portraits image file path
 
 # SNS
 SNS: true
 SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
-  mail: 'mailto:abc@gmail.com'
-  weixin: '' # 你的微信二维码存放的地址
-  qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
-  github: ''
-  Codepen: ''
-  weibo: ''
-  instagram: ''
-  Twitter: ''
-  Dribbble: ''
-  Facebook: ''
-  Google: ''
-  zhihu: ''
-  juejin: ''
-  twitch: ''
+  mail: 'mailto:mozhx020@163.com'
+  weixin: '/assets/qr_code_wechat.jpg' # 你的微信二维码存放的地址
+  qq: 'http://wpa.qq.com/msgrd?v=3&uin=604193275&site=qq&menu=yes' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
+  github: 'https://github.com/cymok'
+ # Codepen: ''
+ # weibo: ''
+ # instagram: ''
+  Facebook: 'http://facebook.com/mozhx'
+  Twitter: 'http://twitter.com/MokChiyin'
+ # Dribbble: ''
+ # Google: ''
+ # zhihu: ''
+ # juejin: ''
+ # twitch: ''
 
 # 分页
-paginate: 2
+paginate: 10
 paginatepath: ['page:num']
 
 # since
 footer:
-  since: 2018
+  since: 2017
 
 # Markdown
 markdown: kramdown
