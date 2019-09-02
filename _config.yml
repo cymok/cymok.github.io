@@ -28,14 +28,14 @@ portraits: 'https://avatars0.githubusercontent.com/u/27819746?s=460&v=4' # your 
 SNS: true
 SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
   mail: 'mailto:mozhx020@163.com'
+  github: 'https://github.com/cymok'
   weixin: '/assets/qr_code_wechat.jpg' # 你的微信二维码存放的地址
   qq: 'http://wpa.qq.com/msgrd?v=3&uin=604193275&site=qq&menu=yes' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
-  github: 'https://github.com/cymok'
+  Facebook: 'http://facebook.com/mozhx'
+  Twitter: 'http://twitter.com/MokChiyin'
  # Codepen: ''
  # weibo: ''
  # instagram: ''
-  Facebook: 'http://facebook.com/mozhx'
-  Twitter: 'http://twitter.com/MokChiyin'
  # Dribbble: ''
  # Google: ''
  # zhihu: ''
@@ -79,7 +79,7 @@ client_secret: ''  # 注册 OAuth Application 后获得的 client_secret
 
 # Share : weibo, qq, wechat, tencent, douban, qzone, linkedin, diandian, facebook, twitter, google
 social-share: true
-social-share-items: ['qq', 'wechat', 'weibo', 'twitter', 'facebook']
+social-share-items: ['wechat', 'qq', qzone, 'weibo', 'facebook', 'twitter', 'google', linkedin]
 
 # 百度统计 在baidu-url里填写自己相关的url代码
 baidu: true
