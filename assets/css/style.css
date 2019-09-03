@@ -1119,3 +1119,9 @@ a{
 #media{
   display: none;
 }
+
+/*小女孩*/
+canvas#live2dcanvas {
+  border: 0 !important;
+  left: 0;
+}
