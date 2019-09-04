@@ -4,7 +4,7 @@
 
 ### Preview
 
-[在线预览 view demo →](http://xseven.me/)
+[在线预览 view demo →](https://blog.mozhx.cn/)
 
 ![1](/screenshot/1.png)
 
@@ -37,7 +37,7 @@
 
 #### 线上部署
 
-​	首先在 `github` 上开启一个仓库起名为 `你的github用户名.github.io` 。并 `clone` 你的仓库到本地。 然后下载 `HardCandy-Jekyll` 的 [源码](https://github.com/xukimseven/HardCandy-Jekyll) 到本地之后，将 `_config.yml` 文件更改为自己的配置（下面会介绍）。之后，将所有文件拷贝至自己的本地仓库根目录下，再上传至自己的 `github` 线上仓库，即可通过域名 `https://你的github用户名.github.io` 访问看到自己的博客页面。
+​	首先在 `github` 上开启一个仓库起名为 `你的github用户名.github.io` 。并 `clone` 你的仓库到本地。 然后下载 `HardCandy-Jekyll` 的 [源码](https://github.com/cymok/HardCandy-Jekyll) 到本地之后，将 `_config.yml` 文件更改为自己的配置（下面会介绍）。之后，将所有文件拷贝至自己的本地仓库根目录下，再上传至自己的 `github` 线上仓库，即可通过域名 `https://你的github用户名.github.io` 访问看到自己的博客页面。
 
 #### 本地部署
 
@@ -362,7 +362,7 @@ social-share-items: ['qq', 'wechat', 'weibo', 'twitter', 'facebook']
 ```yaml
 # 百度统计 在baidu-url里填写自己相关的url代码
 baidu: true
-baidu-url: ''
+baidu-url: '' # 不是完整url 只需要url的问号后面的值
 # 谷歌分析 在google-ID里填写自己在谷歌分析获得的追踪ID
 google: false
 google-ID: ''
@@ -374,7 +374,7 @@ google-ID: ''
 
 ### License 许可证
 
-HardCandy-Jekyll is licensed under [MIT](https://github.com/xukimseven/HardCandy-Jekyll/blob/master/LICENSE).
+HardCandy-Jekyll is licensed under [MIT](https://github.com/cymok/HardCandy-Jekyll/blob/master/LICENSE).
 
 
 
