@@ -19,6 +19,12 @@
                     <a href={{ "tags.html#" | append: tag | pretend: site.baseurl }} class="post-tag">{{ tag }}</a>
                     {% endfor %}
                 {% endif %}
+                <!-- 兼容categories -->
+                {% if post.categories.size > 0 %}
+                    {% for tag in post.categories  %}
+                    <a href={{ "tags.html#" | append: tag | pretend: site.baseurl }} class="post-tag">{{ tag }}</a>
+                    {% endfor %}
+                {% endif %}
                 <time class="post-date" datetime="{{ post.date | date:"%y-%m-%d" }}">{{ post.date | date_to_string }}</time>
           </footer>
       </li>

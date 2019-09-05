@@ -17,6 +17,12 @@ description:
             <a onclick="_hmt.push(['_trackEvent', 'tagGroup', 'click', '{{ tag[0]}}', 1])" href="#{{ tag[0] }}" class="tag">{{ tag[0]}}</a>
             {% endfor %}
         {% endif %}
+        <!-- 兼容categories -->
+        {% if site.categories.size>0 %}
+            {% for tag in site.categories %}
+            <a onclick="_hmt.push(['_trackEvent', 'tagGroup', 'click', '{{ tag[0]}}', 1])" href="#{{ tag[0] }}" class="tag">{{ tag[0]}}</a>
+            {% endfor %}
+        {% endif %}
         </li>
         {% for tag in site.tags %}
         <li>
@@ -25,7 +31,15 @@ description:
             <a onclick="_hmt.push(['_trackEvent', 'tag', 'click', '{{ post.title }}', 1])" class="tag-post" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
             {% endfor %}
         </li>
-
+        {% endfor%}
+        <!-- 兼容categories -->
+        {% for tag in site.categories %}
+        <li>
+            <span class="tag-name" id="{{ tag[0] }}">「{{ tag[0] }}」</span>
+            {% for post in tag[1] %}
+            <a onclick="_hmt.push(['_trackEvent', 'tag', 'click', '{{ post.title }}', 1])" class="tag-post" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+            {% endfor %}
+        </li>
         {% endfor%}
     </ul>
 </main>
