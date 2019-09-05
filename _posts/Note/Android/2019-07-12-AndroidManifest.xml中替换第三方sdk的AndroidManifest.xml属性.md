@@ -1,9 +1,6 @@
 ---
 layout: post
-title:  "AndroidManifest.xml中替换第三方sdk的AndroidManifest.xml属性"
-# date:   date
-categories: "android"
-author: "cymok"
+tags: Android
 ---
 
 ### AndroidManifest.xml中替换第三方sdk的AndroidManifest.xml属性
