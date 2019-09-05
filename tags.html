@@ -14,7 +14,7 @@ description:
         <li class="fadeInUp animated">
         {% if site.tags.size>0 %}
             {% for tag in site.tags %}
-            <a href="#{{ tag[0] }}" class="tag">{{ tag[0]}}</a>
+            <a onclick="_hmt.push(['_trackEvent', 'tagGroup', 'click', '{{ tag[0]}}', 1])" href="#{{ tag[0] }}" class="tag">{{ tag[0]}}</a>
             {% endfor %}
         {% endif %}
         </li>
@@ -22,7 +22,7 @@ description:
         <li>
             <span class="tag-name" id="{{ tag[0] }}">「{{ tag[0] }}」</span>
             {% for post in tag[1] %}
-            <a class="tag-post" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+            <a onclick="_hmt.push(['_trackEvent', 'tag', 'click', '{{ post.title }}', 1])" class="tag-post" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
             {% endfor %}
         </li>
 

@@ -1,12 +1,12 @@
 <header id="index-header">
   <div class="top-center">
       <div class="logo">
-          <a href="{{ "/" | relative_url }}" title="my awesome webtitle">{{ site.webtitle }}</a>
+          <a onclick="_hmt.push(['_trackEvent', 'home', 'click', 'home', 1])" href="{{ "/" | relative_url }}" title="my awesome webtitle">{{ site.webtitle }}</a>
       </div>
       <nav class="top-nav">
           <ul>
               {% for i in site.nav %}
-                <li><a href="{{ i[1] }}">{{ i[0] }}</a></li>
+                <li><a onclick="_hmt.push(['_trackEvent', 'nav', 'click', '{{ i[0] }}', 1])" href="{{ i[1] }}">{{ i[0] }}</a></li>
               {% endfor %}
           </ul>
       </nav>
