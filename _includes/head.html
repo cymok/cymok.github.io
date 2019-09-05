@@ -27,6 +27,11 @@
 <script>
 var _hmt = _hmt || [];
 (function() {
+  var host = window.location.host;
+  var reg = RegExp(/mozhx\.cn/);
+  if(!reg.exec(host)){
+	return;
+  }
   var hm = document.createElement("script");
   hm.src = "https://hm.baidu.com/hm.js?{{ site.baidu-url }}";
   var s = document.getElementsByTagName("script")[0];
