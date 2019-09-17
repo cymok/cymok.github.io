@@ -3,6 +3,8 @@ layout: post
 tags: IDE
 ---
 
+>  图片路径待整理
+
 # Idea 和 Andriod Studio 设置 toString() 的 Json 模版
 
 ### 1. `Alt + Insert` 选择 `toString()` , 或从菜单栏的 `Code` --> `Generate` 打开进入
