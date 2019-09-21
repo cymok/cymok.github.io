@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: git
+tags: Git
 ---
 
 ## 为什么Github要把代码合并请求称为pull request而不是push request？

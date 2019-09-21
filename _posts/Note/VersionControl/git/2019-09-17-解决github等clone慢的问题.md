@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: git 技巧
+tags: Git
 ---
 
 ####  利用gitee下载国外git仓库
