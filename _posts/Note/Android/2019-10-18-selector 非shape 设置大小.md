@@ -40,3 +40,8 @@ tags: Android
 </selector>
 
 ```
+
+---
+
+已知bug：Flyme低版本不兼容
+建议：乖乖使用图片吧
