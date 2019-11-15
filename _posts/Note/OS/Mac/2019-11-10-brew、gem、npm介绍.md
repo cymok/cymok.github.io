@@ -1,6 +1,6 @@
 ---
-layout：post
-tags：Mac
+layout: post
+tags: Mac
 ---
 
 一、Homebrew介绍
