@@ -15,12 +15,12 @@ nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
 
 # 博主
 author: true
-name: 'Mok Chiyin'
+name: 'Mok Chiyin | 莫志贤'
 NickName: 'Harry'
-webtitle: "莫志贤's blog"
+webtitle: "cymok's blog"
 bio: '24, boy'
 about: true
-aboutyou: '来自广东一个遥远的小村庄嘅一个boy，从第一次去网吧开始就爱上计算机。只有0和1的世界是多么的神奇、奥秘，而这注定是一条不归路。。。'
+aboutyou: '作为全村最靓嘅一个boy，在冥冥之中（也许就是误打误撞）被安排走上了一条编程之路。只有0和1的世界是多么的神奇、奥秘，而这注定是一条不归路。。。。'
 # portraits: '/assets/profile.jpeg' # your portraits image file path
 portraits: 'https://avatars0.githubusercontent.com/u/27819746?s=460&v=4' # your portraits image file path
 
