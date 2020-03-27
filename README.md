@@ -4,12 +4,19 @@
 
 HardCandy-Jekyll [https://github.com/xukimseven/HardCandy-Jekyll](https://github.com/xukimseven/HardCandy-Jekyll)
 
+---
+
 #### Jekyll
 
 原汁原味的Jekyll  
-[Jekyll源码](https://github.com/jekyll/jekyll)  
-[官方网站https://jekyllrb.com/](https://jekyllrb.com/)  
-[中文网站https://www.jekyll.com.cn/](https://www.jekyll.com.cn/)
+
+[Jekyll源码](https://github.com/jekyll/jekyll)
+
+官方网站[https://jekyllrb.com/](https://jekyllrb.com/)
+
+中文网站[https://www.jekyll.com.cn/](https://www.jekyll.com.cn/)
+
+---
 
 目录结构
 
