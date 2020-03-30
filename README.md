@@ -2,19 +2,21 @@
 
 完整的模板在这里呢，点击链接获取
 
-HardCandy-Jekyll [https://github.com/xukimseven/HardCandy-Jekyll](https://github.com/xukimseven/HardCandy-Jekyll)
+HardCandy-Jekyll  
+[https://github.com/xukimseven/HardCandy-Jekyll](https://github.com/xukimseven/HardCandy-Jekyll)
 
 ---
 
 #### Jekyll
 
 原汁原味的Jekyll  
-
 [Jekyll源码](https://github.com/jekyll/jekyll)
 
-官方网站[https://jekyllrb.com/](https://jekyllrb.com/)
+官方网站  
+[https://jekyllrb.com/](https://jekyllrb.com/)
 
-中文网站[https://www.jekyll.com.cn/](https://www.jekyll.com.cn/)
+中文网站  
+[https://www.jekyll.com.cn/](https://www.jekyll.com.cn/)
 
 ---
 
