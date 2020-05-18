@@ -15,7 +15,7 @@ tags: Git
 
 这是一个删除文件的例子
 ```
-git filter-branch --tree-filter `rm filename' HEAD
+git filter-branch --force --index-filter "git rm --cached --ignore-unmatch resume/resume.pdf" --prune-empty --tag-name-filter cat -- --all
 ```
 
 ---
@@ -73,6 +73,11 @@ git filter-branch [--setup <command>] [--env-filter <command>]
 
 - `--state-branch <branch>` 此选项将导致在启动时从命名分支加载从旧对象到新对象的映射，并在退出时将其保存为该分支的新提交，从而实现大树的增量。如果< branch> 不存在它将被创建。
 
-- `<rev-list options>…​` git rev-list 的参数。这些选项包含的所有正面参考都被重写。您也可以指定--all等选项
-  - 即按反向顺序指定执行的目标节点
-  - `…` 是指节点，具体可以另外查找 `rev-list` 相关的资料
+还有
+
+- `--` 在最后指定范围前有两个横杠
+
+最后
+
+- `<rev-list options>…​` 作用范围，节点间区间。这些选项包含的所有正面参考都被重写。您也可以指定 `--all` 等选项
+  - 具体可以另外查找 `rev-list` 相关的资料
