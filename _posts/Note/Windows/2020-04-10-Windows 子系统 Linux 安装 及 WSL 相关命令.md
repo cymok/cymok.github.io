@@ -16,7 +16,7 @@ tags: Windows
 `Add-AppxPackage .\app_name.appx`  
 或用7zip直接解压
 
-- 安装
+- 安装  
 在windows启动栏找到ubuntu打开安装  
 如果用7zip解压的话找到解压的`ubuntu.exe`文件直接管理员运行
 
