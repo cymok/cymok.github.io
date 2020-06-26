@@ -109,7 +109,7 @@
 }
 
 @font-face {
-  font-family: "JetBrainsMono";
+  font-family: "JetBrains Mono";
   src: url("../fonts/JetBrainsMono/JetBrainsMono-Regular.woff2") format("woff2"),
        url("../fonts/JetBrainsMono/JetBrainsMono-Regular.woff") format("woff"),
 	   url("../fonts/JetBrainsMono/JetBrainsMono-Regular.ttf") format("truetype"),
