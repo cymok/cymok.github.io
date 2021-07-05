@@ -8,9 +8,12 @@ tags: Git
 
 ---
 
+Service
 ```
 git daemon --export-all --verbose --base-path=.
 ```
+
+`--enable=receive-pack`允许client端向server端push代码
 
 `--export-all`share “base-path” 下所有的repo
 
@@ -25,10 +28,8 @@ git daemon --export-all --verbose --base-path=.
 
 `--reuseaddr`允许快速重启server
 
-其他用户就可使用`git://[SERVER_IP]/[REPO_NAME]`作为镜像
-
+Client就可使用`git://[SERVER_IP]/[REPO_NAME]`作为镜像
 ```
-git daemon --export-all --verbose --base-path=.
+cd <base-path>
+git clone git://127.0.0.1/your_mirror_repo.git
 ```
-
-`--enable=receive-pack`允许client端向server端push代码
