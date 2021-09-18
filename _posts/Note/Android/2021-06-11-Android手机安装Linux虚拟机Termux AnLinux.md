@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: Linux, Termux, AnLinux
+tags: Linux Termux AnLinux
 ---
 
 ---
