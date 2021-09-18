@@ -1,6 +1,6 @@
 ---
-layout:post
-tags:Wsl
+layout: post
+tags: Wsl
 ---
 
 检查ip的地理地址
