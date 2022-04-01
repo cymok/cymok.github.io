@@ -1,5 +1,5 @@
-A类是父类
-B类是子类 extends A
+
+B extends A
 
 向上转型
 A a = new B();
