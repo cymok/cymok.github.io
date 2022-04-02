@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: Wsl
+tags: WSL Linux Windows Mac
 ---
 
 检查ip的地理地址

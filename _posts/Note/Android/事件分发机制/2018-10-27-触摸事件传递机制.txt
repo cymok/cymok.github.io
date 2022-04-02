@@ -1,7 +1,8 @@
-ViewGroup-->ViewGroup-->View
-						|
-						|
-ViewGroup<--ViewGroup<--
+
+Activity-->ViewGroup-->ViewGroup-->View
+									   |
+									   |
+Activity<--ViewGroup<--ViewGroup<------
 
 ViewGroup可以拦截onInterceptTouchEvent,
 若ViewGroup拦截,自己的onTouchEvent处理事件;若不拦截(默认),则向下分发

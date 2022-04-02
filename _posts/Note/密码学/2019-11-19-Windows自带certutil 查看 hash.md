@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: Windows Hash
+tags: Windows
 ---
 
 利用Windows自带工具 `certutil` 查看文件Hash校验值 MD5 SHA1 SHA256
