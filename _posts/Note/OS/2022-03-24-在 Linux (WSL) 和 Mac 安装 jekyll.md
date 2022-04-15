@@ -56,43 +56,37 @@ jekyll serve --port 9527
 
 目前我遇到的问题：
 
-- jekyll s 出错
+- **`jekyll s` 出错**
 
-原因可能ruby版本过高，可尝试切换到 ruby 2.x  
-如果安装了rvm，在rvm上安装2.x，然后再切换，如果不加默认参数 `--default` rvm切换后关闭窗口后会失效，下次使用需要再次切换
+原因可能ruby版本过高，可尝试切换到 ruby 2.6  
+如果安装了rvm，在rvm上安装2.6，然后再切换，如果不加默认参数 `--default` rvm切换后关闭窗口后会失效，下次使用需要再次切换
 ```
 rvm list # 查看ruby列表
 rvm list known # 查看可安装的版本
-rvm install 2.6.0 # 没有安装则安装2.x
-rvm use 2.6.0 --default # 使用并设为默认
-# 开启服务
-jekyll s
+rvm install 2.6 # 没有安装则安装2.6
+rvm use 2.6 --default # 使用并设为默认
+
+bundle install # 项目bundle更新
+
+jekyll s # 开启服务
 ```
 
-- 提示 bundler 未安装  
+- **提示 bundler 未安装**
+
 尝试
 ```
+gem install bundler
+//or
 gem update --system
 ```
 
-- 依赖版本冲突报错，`bundle update` 更新失败 timeout
+- **依赖版本冲突报错**
 
 解决办法
-
-1.`rm Gemfile.lock`
-
-2.`bundle clean --force`
-
-3.`bundle install`
-
+```
+# 项目bundle更新
+rm Gemfile.lock
+bundle clean --force
+bundle install
+```
 重新自动生成即可
-
-- 后来不知道是更新了gem还是什么，导致jekyll打不开了
-
-解决办法
-```
-gem install -n /usr/local/bin jekyll
-```
-重新安装到本地即可
-
-原因是不能默认安装到系统目录？`-n`指定到用户目录？那是否用 `gem install jekyll --user-install` 也行？

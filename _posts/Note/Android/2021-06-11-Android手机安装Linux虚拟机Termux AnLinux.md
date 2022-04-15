@@ -1,11 +1,9 @@
 ---
 layout: post
-tags: Linux Termux AnLinux
+tags: Linux Termux
 ---
 
----
-
-Termux 关联设备的sdcard
+### Termux 关联设备的sdcard
 
 ```
 termux-setup-storage
@@ -15,9 +13,7 @@ termux-setup-storage
 
 会挂载在 `~/storage/shared` 同时 `~/storage/` 下会挂载其它媒体目录
 
----
-
-AnLinux 关联设备的sdcard
+### AnLinux 关联设备的sdcard
 
 先关联termux的`~/storage`
 
@@ -25,7 +21,31 @@ AnLinux 关联设备的sdcard
 
 ---
 
-Kali 执行 `apt update` 时 报错 `the repository is not signed`
+#### 要处理的问题
+
+- 连接Termux的SSH
+```
+#安装OpenSSH (Termux定制的OpenSSH 应该说这里的所有包都是定制的)
+pkg install openssh
+
+#运行SSH Server
+sshd
+
+#设置密码
+passwd 
+
+#获得Android IP
+ifconfig
+
+#客户端运行 这里用用户名密码登录 不需要配置RSA公钥
+ssh android_ip -p 8022
+```
+
+安装 SSH 后在电脑使用 SFTP 工具连接手机更方便
+
+---
+
+- Kali 执行 `apt update` 时 报错 `the repository is not signed`
 
 方法1, 允许过期证书
 
@@ -55,24 +75,3 @@ sudo apt update --allow-insecure-repositories
 ```
 
 ---
-
-连接Termux的SSH
-```
-#安装OpenSSH (Termux定制的OpenSSH 应该说这里的所有包都是定制的)
-pkg install openssh
-
-#运行SSH Server
-sshd
-
-#设置密码
-passwd 
-
-#获得Android IP
-ifconfig
-
-#客户端运行 这里用用户名密码登录 不需要配置RSA公钥
-ssh android_ip -p 8022
-```
-
----
-
