@@ -34,7 +34,7 @@ unzip zip libasound2-dev libcups2-dev libfontconfig1-dev libx11-dev libxext-dev 
 Your Boot JDK version must be one of: 18 19 
 ```
 
-根据提示去安装 JDK18+ 即可
+根据提示去安装 JDK18 即可，是需要低点的版本的 SDK, 官方称之 Boot JDK
 
 可能是 WSL 环境的问题 网上说用以下命令检查可通过
 ```
@@ -58,6 +58,14 @@ HELP: Run 'make doctor' to diagnose build problems.
 make[1]: *** [/mnt/c/Workspaces/openjdk-mobile/make/Init.gmk:315: main] Error 2
 make: *** [/mnt/c/Workspaces/openjdk-mobile/make/Init.gmk:186: images] Error 2
 ```
+
+bash configure 的时候如果没有加入--disable-warnings-as-errors参数，编译过程出现警告信息会终止编译
+```
+By default, the JDK has a strict approach where warnings from the compiler is considered errors which fail the build. For very new or very old compiler versions, this can trigger new classes of warnings, which thus fails the build.
+Run configure with --disable-warnings-as-errors to turn of this behavior. (The warnings will still show, but not make the build fail.)
+```
+
+加上继续
 
 4.**验证成果**
 

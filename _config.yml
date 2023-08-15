@@ -1,7 +1,7 @@
 # Site settings 配置站点
-title: 'cymok' # your awesome title
-description: '我的代码没有bug'
-keywords: 'Android, Java, Python' # your web keywords, another keywords
+title: 'mok' # your awesome title
+description: '我的代码没有BUG'
+keywords: 'Android, Flutter, Java, Kotlin' # your web keywords, another keywords
 url: 'https://cymok.github.io' # your host
 
 # nav 中文字符空格：&emsp;
@@ -15,10 +15,10 @@ nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
 
 # 博主
 author: true
-name: 'Mok Chiyin | 莫志贤'
+name: 'Mok | 莫志贤'
 NickName: 'Harry'
-webtitle: "zxmo's blog"
-bio: '27, boy'
+webtitle: "mok's blog"
+bio: '28, boy'
 about: true
 aboutyou: '从前我们村有一个靓仔，后来没有了，因为我出来打工了。'
 # portraits: '/assets/profile.jpeg' # your portraits image file path
@@ -27,12 +27,12 @@ portraits: 'https://avatars0.githubusercontent.com/u/27819746?s=460&v=4' # your 
 # SNS
 SNS: true
 SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
-  mail: 'mailto:mzx@zxmo.xyz'
+  mail: 'mailto:mzx0766@163.com'
   github: 'https://github.com/cymok'
   weixin: '/assets/qr_code_wechat.jpg' # 你的微信二维码存放的地址
   qq: 'http://wpa.qq.com/msgrd?v=3&uin=604193275&site=qq&menu=yes' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
  # Facebook: 'http://facebook.com/mozhx'
-  Twitter: 'http://twitter.com/MokChiyin'
+ # Twitter: 'http://twitter.com/MokChiyin'
  # Codepen: ''
  # weibo: ''
  # instagram: ''
