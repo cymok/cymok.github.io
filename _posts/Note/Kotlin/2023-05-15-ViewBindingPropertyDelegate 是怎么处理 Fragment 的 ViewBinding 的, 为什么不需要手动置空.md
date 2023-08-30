@@ -84,7 +84,7 @@ return FragmentViewBindingProperty
         }
 ```
 
-当lifecycle 的状态是不是 DESTROYED 时, 执行了 lifecycle.addObserver(ClearOnDestroyLifecycleObserver(this))
+当lifecycle 的状态不是 DESTROYED 时, 执行了 lifecycle.addObserver(ClearOnDestroyLifecycleObserver(this))
 
 先看 ClearOnDestroyLifecycleObserver
 
