@@ -20,7 +20,7 @@ NickName: 'Harry'
 webtitle: "mok's blog"
 bio: '28, boy'
 about: true
-aboutyou: '从前我们村有一个靓仔，后来没有了，因为我出来打工了。'
+aboutyou: '一只要兼职写 后端 的 Android 打工仔。'
 # portraits: '/assets/profile.jpeg' # your portraits image file path
 portraits: 'https://avatars0.githubusercontent.com/u/27819746?s=460&v=4' # your portraits image file path
 
