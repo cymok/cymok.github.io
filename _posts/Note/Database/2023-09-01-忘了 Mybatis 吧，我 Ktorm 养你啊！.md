@@ -379,6 +379,11 @@ fun ktormSelect() {
 整合前，可 `useTransaction` 设置隔离级别
 
 ```
+database.useTransaction {
+    // DML
+}
+
+// 要更改隔离级别的话 加上参数即可
 database.useTransaction(isolation = TransactionIsolation.REPEATABLE_READ) {
     // DML
 }
