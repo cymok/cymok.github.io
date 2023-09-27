@@ -3,9 +3,6 @@ layout: post
 tags: Windows Linux Mac
 ---
 
-# Chrome, Edge 使用指定用户配置打开浏览器
-
-
 用户配置存放路径
 
 ```
