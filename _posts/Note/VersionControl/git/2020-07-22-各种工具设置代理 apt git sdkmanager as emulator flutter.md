@@ -3,6 +3,8 @@ layout: post
 tags: Linux Git Flutter
 ---
 
+注意，一般代理协议都是 socks5 和 http, 并没有 https
+
 #### apt
 
 apt 使用 socks5 代理
