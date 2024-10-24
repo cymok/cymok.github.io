@@ -1,10 +1,10 @@
 ---
 layout: post
-tags: Windows
+tags: WSL
 ---
 
-默认是没有密码的，
+Ubuntu 默认是没有密码的，初次设置密码
+
 ```
 sudo passwd
 ```
-设置密码

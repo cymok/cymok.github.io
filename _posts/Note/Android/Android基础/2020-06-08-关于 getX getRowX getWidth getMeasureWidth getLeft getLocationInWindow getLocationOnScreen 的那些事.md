@@ -23,6 +23,10 @@ tags: Android
 
 ![view.getLeft()](/img/view_get_left.jpg)
 
+`view.getLocationInWindow` view 在当前窗口的xy坐标
+
+`view.getLocationOnScreen` view 在屏幕的xy坐标
+
 #### MotionEvent
 
 `motionEvent.getX()` 触摸点 在触摸View的x坐标
@@ -32,3 +36,9 @@ tags: Android
 `motionEvent.getRowX()` 触摸点 在屏幕左上角(坐标原点)的x坐标
 
 ![motionEvent.getRawX()](/img/motion_event_get_raw_x.jpg)
+
+#### 总结
+
+`getX` `getLeft` `getLocationInWindow` 是在上级的 坐标
+
+`getRowX` `getLocationOnScreen` 是在屏幕的坐标

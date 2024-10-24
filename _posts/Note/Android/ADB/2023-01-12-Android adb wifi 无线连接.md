@@ -3,7 +3,9 @@ layout: post
 tags: Android
 ---
 
-Android 11+ 版本 无需数据线 支持直接在IDE和手机操作，以下是通用方法
+Android 11+ 版本 无需数据线 支持直接在IDE和手机操作（Android 11+ 可通过 ADB over Network 功能来远程执行 adb 命令）
+
+以下是通用方法
 
 # 手机端
 
@@ -85,11 +87,11 @@ adb devices
 
 2. `adb disconnect 设备IP` 断开连接（设备从 `adb devices` 的执行结果里看）
 
-3. 关闭开发者设置里的 `adb 调试`，重新打开
+3. 进入开发者设置，撤销USB调试授权，重新打开 `adb 调试`
 
 4. 数据线连接，执行 `adb -s 设备 tcpip 5555` 打开adb连接的默认端口监听，拔掉数据线
 
-5. `adb connect 设备IP` 重新连接
+5. `adb connect 设备IP` + 手机端授权，重新连接
 
 6. 再次查看能否成功进行调试安装等操作
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: Windows
+tags: WSL
 ---
 
 # 使用 LxRunOffline 修改 WSL 名称

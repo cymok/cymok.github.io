@@ -3,7 +3,7 @@ layout: post
 tags: Windows
 ---
 
-# bat 选择
+# Windows bat 批处理 选择 的 写法
 
 ## set /p
 

@@ -9,17 +9,21 @@ apt update && apt upgrade -y
 ```
 
 2.安装ruby
+
 Linux
 ```
 apt install ruby-full
 ```
+
 Mac
 ```
 brew install ruby
 ```
+
 建议通过 rvm 来安装 ruby 并管理，可以随时切换多个场合的不同版本
 
 3.配置环境
+
 Linux
 ```
 echo ‘# Ruby' >> ~/.bashrc
@@ -27,11 +31,13 @@ echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
 echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 ```
+
 Mac
 ```
 echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.bash_profile
 source ~/.bash_profile
 ```
+
 注意是要写入自己的变量文件
 
 4.安装Jekyll和Bundler

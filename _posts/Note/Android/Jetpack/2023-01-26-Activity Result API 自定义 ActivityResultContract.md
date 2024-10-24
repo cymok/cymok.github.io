@@ -3,6 +3,10 @@ layout: post
 tags: Android
 ---
 
+# Activity Result API
+
+代替 onActivityResult
+
 - ActivityResultContracts
 
 ActivityResultContracts 里有一堆预定义好的 ActivityResultContract 实现类

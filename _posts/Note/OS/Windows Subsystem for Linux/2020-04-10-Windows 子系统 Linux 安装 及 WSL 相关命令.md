@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: Windows
+tags: WSL
 ---
 
 - 开启Windows开发者选项  

@@ -5,6 +5,10 @@ tags: Windows
 
 Windows无法弹出U/硬盘
 
+- 方法〇：使用 [Powertoys](https://github.com/microsoft/PowerToys) 的 `File Locksmith` 插件，直接在资源管理器中 右击盘符 检查被占用的进程并结束掉
+
+（2024.03 更新，现在只推荐 方法〇）
+
 - 方法一：利用第三方软件，如360等。管理小流氓的都是大流氓，不推荐
 
 - 方法二：磁盘管理，选择U/硬盘，脱机
@@ -31,11 +35,3 @@ taskkill /im test.exe -f
 // 按进程id杀 processid替换为进程id
 taskkill /pid processid -f
 ```
-
----
-
-进阶：
-
-能否利用命令查询 Windows日志（右击Win图标 > 事件查看器 > Windows日志 > 系统 > 事件ID为225的警告），然后开发出类似360安全弹出U盘的脚本或者小工具
-
-todo

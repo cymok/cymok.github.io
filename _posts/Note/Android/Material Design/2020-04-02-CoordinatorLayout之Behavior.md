@@ -13,11 +13,14 @@ tags: Android CoordinatorLayout
 
 - onInterceptTouchEvent()：是否拦截触摸事件
 - onTouchEvent()：处理触摸事件
+
 - layoutDependsOn()：确定使用Behavior的View要依赖的View的类型
 - onDependentViewChanged()：当被依赖的View状态改变时回调
 - onDependentViewRemoved()：当被依赖的View移除时回调
+
 - onMeasureChild()：测量使用Behavior的View尺寸
 - onLayoutChild()：确定使用Behavior的View位置
+
 - onStartNestedScroll()：嵌套滑动开始（ACTION_DOWN），确定Behavior是否要监听此次事件
 - onStopNestedScroll()：嵌套滑动结束（ACTION_UP或ACTION_CANCEL）
 - onNestedScroll()：嵌套滑动进行中，要监听的子 View的滑动事件已经被消费
