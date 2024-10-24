@@ -39,7 +39,9 @@ aboutToAppear ──> build ──> onDiBuild ──> onPageShow ──（Compon
 4. 包含子组件的流程
 
 冷启动的初始化流程（MyComponent 是 @Entry 的，Child 是 MyComponent 的子组件）
+
 ```
 MyComponent aboutToAppear --> MyComponent build --> MyComponent onDidBuild                                                              --> MyComponent onPageShow
-												                           --> Child aboutToAppear --> Child build --> Child onDidBuild
+                                                                           --> Child aboutToAppear --> Child build --> Child onDidBuild
 ```
+
