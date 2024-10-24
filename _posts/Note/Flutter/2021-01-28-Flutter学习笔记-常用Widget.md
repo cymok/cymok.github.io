@@ -59,6 +59,8 @@ OutlineInputBorder  (border:输入框边框)
 
 按钮 RaisedButton FlatButton OutlineButton IconButton ButtonBar
 
+其它可处理点击的 Widget：InkWell (有 ripple 效果) 、GestureDetector (可用于检测各种手势)
+
 Image
 
 ClipOval + Image  (圆图)

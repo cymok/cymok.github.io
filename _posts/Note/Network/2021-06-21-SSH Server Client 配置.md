@@ -24,9 +24,9 @@ Include /etc/ssh/sshd_config.d/*.conf
 ```
 没有此行代码则手动添加即可
 
-将 ssh 配置文件(*.conf)置于 ssh 的配置目录: /etc/ssh/sshd_config.d/ (ssh是否在etc目录取决于安装路径 下同)
+将 ssh 配置文件 `*.conf` 置于 ssh 的配置目录: `/etc/ssh/sshd_config.d/` (ssh是否在etc目录取决于安装路径 下同)
 
-可自定义配置端口号和登录权限等
+可自定义配置端口号和登录权限等 (测试 CentOS 无法使用 Include, 直接把配置添加在 sshd_config 文件里即可)
 ```
 Port 8022
 PubkeyAuthentication yes
@@ -42,3 +42,10 @@ PermitRootLogin yes
 /etc/init.d/ssh stop
 ```
 
+centOS
+```
+systemctl status sshd.service
+systemctl start sshd.service
+systemctl restart sshd.service
+systemctl stop sshd.service
+```

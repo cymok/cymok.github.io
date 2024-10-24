@@ -24,6 +24,25 @@ git submodule init
 git submodule update
 ```
 
+若报错 `fatal: transport 'file' not allowed`，尝试执行
+```
+git config --global protocol.file.allow always
+```
+
+#### 从镜像地址克隆带子仓库的仓库
+
+1. 克隆镜像仓库中的主仓库
+```
+git clone xxx
+```
+
+2. 修改 `.gitmodules` 中的子仓库 url 为镜像目录中的 子仓库 url
+
+3. 更新子仓库，参考上面初始化 submodule 的步骤
+```
+git submodule update --init
+```
+
 #### reset 更新子模块到某个节点
 先cd到submodule, 正常操作reset
 ```

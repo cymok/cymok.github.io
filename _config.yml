@@ -8,8 +8,8 @@ url: 'https://cymok.github.io' # your host
 nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
   首页: '/'
   标签: '/tags.html'
-  时间线: '/timeline.html'
-  关于作者: '/about.html'
+  时间: '/timeline.html'
+  关于: '/about.html'
  # 友情链接: '/friendLink.html'
  # 个人简历: '/resume/resume.pdf'
 
@@ -18,9 +18,9 @@ author: true
 name: 'Mok | 莫志贤'
 NickName: 'Harry'
 webtitle: "mok's blog"
-bio: '28, boy'
+bio: '29, 男'
 about: true
-aboutyou: '从前我们村有一个靓仔，后来没有了，因为我出来打工了。'
+aboutyou: '逆风的方向 更适合飞翔'
 # portraits: '/assets/profile.jpeg' # your portraits image file path
 portraits: 'https://avatars0.githubusercontent.com/u/27819746?s=460&v=4' # your portraits image file path
 
@@ -29,7 +29,7 @@ SNS: true
 SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
   mail: 'mailto:mzx0766@163.com'
   github: 'https://github.com/cymok'
-  weixin: '/assets/qr_code_wechat.jpg' # 你的微信二维码存放的地址
+  weixin: '/assets/qr_code_wechat.png' # 你的微信二维码存放的地址
   qq: 'http://wpa.qq.com/msgrd?v=3&uin=604193275&site=qq&menu=yes' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
  # Facebook: 'http://facebook.com/mozhx'
  # Twitter: 'http://twitter.com/MokChiyin'

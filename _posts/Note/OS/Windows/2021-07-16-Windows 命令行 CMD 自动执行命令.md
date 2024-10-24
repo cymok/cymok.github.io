@@ -78,6 +78,10 @@ Set-ExecutionPolicy RemoteSigned
 
 ---
 
-参考1：https://blog.csdn.net/lei_qi/article/details/106592404
-参考2：https://www.zhihu.com/question/54724102/answer/140852198
-参考3：https://www.cnblogs.com/spring1997/p/13629850.html
+参考
+
+<https://blog.csdn.net/lei_qi/article/details/106592404>
+
+<https://www.zhihu.com/question/54724102/answer/140852198>
+
+<https://www.cnblogs.com/spring1997/p/13629850.html>
