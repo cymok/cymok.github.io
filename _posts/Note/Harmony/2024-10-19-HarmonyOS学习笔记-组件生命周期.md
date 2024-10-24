@@ -24,16 +24,16 @@ tags: Harmony
 ```
                                           ┌─<─────────────────────────────────────────────<┐
                                           │    (页面显示、路由、切换到前台)                │
-										  │                                                │
+                                          │                                                │
                                           │                (页面隐藏、路由、切换到后台)    │
                                           │                                 ┌──────>┐      │
                                           │                                 │       │      │
 aboutToAppear ──> build ──> onDiBuild ──> onPageShow ──（Component is visible）──> onPageHide ──> aboutToAppear
                                           │                                         │
-										  │                                         │
-										  │                                         │
-										  │             (点击返回按钮)              │
-										  └─────────────> onBackPress ─────────────>┘
+                                          │                                         │
+                                          │                                         │
+                                          │             (点击返回按钮)              │
+                                          └─────────────> onBackPress ─────────────>┘
 ```
 
 4. 包含子组件的流程
