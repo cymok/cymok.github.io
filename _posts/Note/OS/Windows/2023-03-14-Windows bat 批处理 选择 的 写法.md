@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: Windows
+tags: Windows 批处理
 ---
 
 # Windows bat 批处理 选择 的 写法

@@ -146,7 +146,7 @@ runBlocking {
 
 ### ShareFlow 和 StateFlow (BroadcastChannel 的替代方案)
 
-1. **BroadcastChannel**：
+1. ~~**BroadcastChannel**~~：
    - `BroadcastChannel` 允许多个消费者同时接收同一消息。
    - 它不支持重播（replay）和缓冲区大小的灵活配置。
    - 接收者会收到所有发射的值（如果接收者在发射之后才开始收集数据，只能接收到之后发射的数据）

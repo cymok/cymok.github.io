@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: TextView
+tags: Android
 ---
 
 TextView auto size 字体大小自动适应
