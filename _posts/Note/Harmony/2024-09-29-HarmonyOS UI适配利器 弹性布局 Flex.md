@@ -79,11 +79,11 @@ Flex({ direction: FlexDirection.Row, alignItems: ItemAlign.Center }) { // 容器
   Text('alignSelf Start').width('25%').height(80)
     .alignSelf(ItemAlign.Start) // 子元素单独设置自己的对齐方式为 Start，将覆盖父容器的
     .backgroundColor(0xF5DEB3)
-	
+
   Text('no alignSelf').width('25%').height(100)
     .backgroundColor(0xF5DEB3)
-	
     .alignSelf(ItemAlign.End)  // End
+
   Text('no alignSelf').width('25%').height(100)
     .backgroundColor(0xF5DEB3)
 }
