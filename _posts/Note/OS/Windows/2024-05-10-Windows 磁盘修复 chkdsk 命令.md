@@ -12,7 +12,7 @@ chkdsk 命令
 若要检查驱动器 Z 中的磁盘并出现 Windows 修复错误
 
 ```
-chkdsk d: /z
+chkdsk z: /f
 ```
 
 ---

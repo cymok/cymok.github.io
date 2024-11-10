@@ -5,7 +5,7 @@ tags: 音视频 ffmpeg
 
 # 在 Windows 中（非WSL） 编译 FFmpeg
 
-ffmpeg 版本 n4.4.4
+ffmpeg 版本 n4.4.5
 
 ## 编译相关工具介绍
 
@@ -28,7 +28,7 @@ Visual Studio 的 MSVC 编译器，C 编译器
 
 ## 任意位置新增脚本 `msvc_msys2.bat`
 
-vcvars64.bat 的路径改为自己VS中的对应路径，msys2_shell.cmd 的路径改为自己msys2中的对应路径，这里的作用是 在msys2中使用msvc编译器
+vcvars64.bat 的路径改为自己VS中的对应路径，msys2_shell.cmd 的路径改为自己msys2中的对应路径，这里的作用是在后面的msys2中使用msvc编译器
 ```
 call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat"
 C:\msys64\msys2_shell.cmd -mingw64
@@ -70,7 +70,7 @@ cd 到 ffmpeg 源码目录，执行命令
 
 ```
 # 配置 静态库 动态库 指定系统和架构 编译工具链 等，--prefix是指定编译后输出的二进制文件路径
-./configure --enable-static --enable-shared --disable-debug --target-os=win64 --arch=x86_64 --toolchain=msvc --prefix=/z/Workspaces/FFmpegLib
+./configure --enable-static --enable-shared --disable-debug --target-os=win64 --arch=x86_64 --toolchain=msvc --prefix=/z/Workspaces/FFmpegWindows
 ```
 
 ## 修改 `ffmpeg\config.h` 文件
