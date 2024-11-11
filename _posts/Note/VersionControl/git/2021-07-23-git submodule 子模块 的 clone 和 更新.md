@@ -12,7 +12,7 @@ clone时带上递归参数 `--recursive`
 git clone URL --recursive
 ```
 
-#### 如果 clone 时忘记带 `--recursive` 参数 可以后续初始化 submodule
+#### 如果 clone 时忘记带 `--recursive` 参数（或从没有子模块的分支切换到有子模块的分支） 可以后续初始化 submodule
 ```
 git submodule update --init
 ```

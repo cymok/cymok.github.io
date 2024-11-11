@@ -47,3 +47,52 @@ git submodule add [URL] [SUBMODULE_NAME]
 ```
 
 然后从上面 path 目录的 `.git` 文件指向主仓库的 `.git` 目录 `主仓库/.git/modules/xxx`，接着从此目录的 `HEAD` 指向某个引用找到子仓库对应的源码
+
+## 场景示例，git submodule 管理子模块
+
+假设目前 git 管理了模块代码，切换到使用 git submodule 来管理
+
+1. 移除 module_flutter 的 Git 跟踪（此操作不会删除工作区文件）
+
+```
+git rm -r --cached module_flutter
+```
+
+2. 进入 module_flutter 创建模块的 git 仓库，并提交远端仓库
+
+```
+cd module_flutter
+
+git init
+git add .
+git commit -m "New Module"
+git remote add origin ssh://admin@192.168.1.211:29418/module_flutter.git
+git push -u origin master # 推送到远端
+```
+
+3. 把目录文件移除（或移动到别的地方）
+
+4. 在目录不存在的前提下，在主仓库根目录执行添加 git submodule 的命令
+
+```
+git submodule add ssh://admin@192.168.1.211:29418/module_flutter.git module_flutter
+```
+
+会生成 `.submodule` 文件，
+git 会把子仓库 module_flutter 整个目录识别成文件，内容是子仓库的 HEAD 的 commitId
+
+提交 `.submodule` 和 `module_flutter` 到远端即可
+
+后续初始化更新子模块
+```
+git submodule update --init
+```
+
+之后可以进入 submodule 使用 git 操作
+
+5. 到此基本完成 git submodule 的管理
+
+可直接拉取远端最新代码
+
+可选择恢复原来目录的文件（可以恢复 build 目录等忽略的文件），
+`.git` 文件和目录不要动，剪切移动除了 `.git` 外的文件恢复到原来目录

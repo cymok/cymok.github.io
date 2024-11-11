@@ -122,3 +122,21 @@ emulator -avd Nexus_5X_API_29 -http-proxy http://127.0.0.1:7890
   client.badCertificateCallback = (cert, host, port) => true;
 };
 ```
+
+#### DartTS 
+
+#### Ktor Client
+
+```
+            client.apply {
+                // 代理
+                // 有效: Android(OkHttp)、Desktop(JVM)、iOS(NSURLSession)
+                // 无效: Web
+                // JS（Web） 平台在浏览器中没有直接的代理配置机制。浏览器的代理设置通常是由浏览器本身进行管理，而不是在 JavaScript 中配置
+                this.engineConfig.proxy =
+                    ProxyBuilder.socks("192.168.1.202", 7890)
+//                    ProxyBuilder.http(Url("http://192.168.1.202:7890/"))
+//                    ProxyBuilder.socks("127.0.0.1", 7890)
+//                    ProxyBuilder.http(Url("http://127.0.0.1:7890/"))
+            }.get(API_URL).body()
+```
