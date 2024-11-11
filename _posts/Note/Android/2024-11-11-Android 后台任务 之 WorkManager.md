@@ -7,7 +7,21 @@ tags: Android
 
 WorkerManager 官方文档 <https://developer.android.google.cn/topic/libraries/architecture/workmanager?hl=zh-cn>
 
-demo <https://github.com/cymok/TestWorkManager>
+Demo App <https://github.com/cymok/TestWorkManager>
+
+---
+
+> 优势：
+
+- 任务持久化，重启后有效
+
+- 支持任务链调用，任务依赖
+
+- 约束条件，可以在 网络、充电等 多种状态条件下执行
+
+- 高度封装，相比 比较底层的 JobService ，不需要过多手动配置
+
+- 任务可控，返回值 WorkRequest，可以控制任务的生命周期、状态等
 
 > 限制：
 
@@ -197,3 +211,9 @@ val workRequest = OneTimeWorkRequestBuilder<TestWorker>()
 WorkManager.getInstance(context)
     .enqueue(workRequest)
 ```
+
+#### 测试
+
+- 在 [Demo App](https://github.com/cymok/TestWorkManager) 里可进行一些测试
+
+- 命令 `adb shell dumpsys jobscheduler` 可查看任务记录, 负责管理 Worker 执行的组件为 `SystemJobService`
